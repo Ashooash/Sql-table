@@ -1,0 +1,72 @@
+CREATE DATABASE STUDENT;
+USE STUDENT;
+CREATE table studentdetails(
+id int primary key,
+fullname char(20),
+age numeric(5),
+marks numeric(15)
+);
+insert into studentdetails values(125,"Anu",15,95);
+insert into studentdetails values(565,"Dhanu",14,80);
+insert into studentdetails values(875,"Karthik",15,75);
+insert into studentdetails values(265,"Ram",16,84);
+insert into studentdetails values(465,"Varun",14,60);
+select * from studentdetails;
+
+CREATE DATABASE EMPLOYEE;
+USE EMPLOYEE;
+CREATE table employeedetails(
+id int primary key,
+fullname char(20),
+age numeric(5),
+salary numeric(15)
+);
+insert into employeedetails values(325,"Gokul",25,9500);
+insert into employeedetails values(765,"Rohith",24,8000);
+insert into employeedetails values(625,"Sathya",23,7500);
+insert into employeedetails values(897,"Tom",26,8450);
+insert into employeedetails values(147,"Leon",24,1000);
+select * from employeedetails;
+
+CREATE DATABASE BANK;
+USE BANK;
+CREATE table bankinfo(
+id int primary key,
+fullname char(20),
+acctype varchar(10),
+address varchar(50)
+);
+insert into bankinfo values(110,"Anu","Primary","D-90,cbe");
+insert into bankinfo values(225,"Dhanu","Joint","C-234,sidco");
+insert into bankinfo values(896,"Karthik","Savings","C-567-90,kurichi");
+insert into bankinfo values(356,"Ram","Primary","A-101,cbe");
+insert into bankinfo values(752,"Varun","Savings","B-290,pollachi");
+select * from bankinfo;
+
+CREATE DATABASE LIBRARY;
+USE LIBRARY;
+CREATE table bookdetails(
+id int primary key,
+fullname char(20),
+bookname char(5),
+sub char(15)
+);
+insert into bookdetails values(125,"Anu","Kinderlot","Childer");
+insert into bookdetails values(565,"Dhanu","What your is full of","General");
+insert into bookdetails values(875,"Karthik","destiny","happy");
+insert into bookdetails values(265,"Ram","Work to do","life");
+insert into bookdetails values(465,"Varun","Life is full of surprises","Sad");
+select * from bookdetails;
+
+CREATE DATABASE FAMILY;
+USE FAMILY;
+CREATE table familytree(
+nam int primary key,
+realtion char(20),
+age numeric(5),
+);
+insert into familytree values("Anu","daughter",10,);
+insert into familytree values("Dhanu","sister",15);
+insert into familytree values("Karthik","brother",18);
+insert into familytree values("Ram","dad",34);
+select * from familytree;
